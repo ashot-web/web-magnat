@@ -1,0 +1,91 @@
+#style-switcher h2 a { background: #00bcd4 none repeat scroll 0 0 }
+
+/*START SCROLL TO TOP*/
+.topcontrol {background: #00bcd4 none repeat scroll 0 0;}
+/*END SCROLL TO TOP*/
+
+/*START MENU*/
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #00bcd4 !important;
+    background-color: transparent;
+}
+.menu-top li a:hover { color: #00bcd4!important }
+.navbar-default.menu-shrink li a:hover { color: #00bcd4 !important }
+.navbar-default .navbar-toggle .icon-bar { background-color: #00bcd4 }
+/*END MENU*/
+
+
+.section-title span {background: #00bcd4 none repeat scroll 0 0;}
+
+/*START BTN STYLE*/
+.btn-dark-bg:hover,
+.btn-dark-bg:focus {
+    background: #00bcd4;
+    border: 2px solid #00bcd4;
+    color: #fff;
+}
+.btn-home-bg:hover,
+.btn-home-bg:focus {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #222;
+}
+/*END BTN STYLE*/
+
+.carousel-indicators .active {border: 1px solid #00bcd4;background: #00bcd4 none repeat scroll 0 0;}
+
+.left-control:hover,
+.right-control:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+.about_single:hover i {
+    box-shadow: 0 0 0 0px #00bcd4;
+    background: #00bcd4;
+    border: 1px solid #00bcd4;
+}
+.about_single span {background: #00bcd4 none repeat scroll 0 0;}
+
+.about_single:hover h4 { color: #00bcd4 }
+
+.progress-bar > span {background: #00bcd4 none repeat scroll 0 0;}
+
+.grid figure {background: #00bcd4 none repeat scroll 0 0;}
+
+.single_service:hover {background: #00bcd4;}
+
+.single_service i {color: #00bcd4;}
+
+.tema-member .team-thumbnail .overlay {background-color: rgba(28,186,200,0.8);}
+
+.single_why:hover { background: #00bcd4; }
+
+.single_why i {background: #00bcd4 none repeat scroll 0 0;}
+
+.single_why:hover i {color: #00bcd4;}
+
+.subscribe_input button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #222;
+}
+
+.single_blog_title h5 span {color: #00bcd4;}
+
+.single_blog_title_two h5 span {color: #00bcd4;}
+
+.single_blog_content a:hover {color: #00bcd4;}
+
+.buy_now {background: #09121b none repeat scroll 0 0;}
+
+.form-control:hover,
+.form-control:focus {border: 1px solid #00bcd4;}
+
+.btn-contact-bg {background: #00bcd4 none repeat scroll 0 0;}
+
+
+
+
