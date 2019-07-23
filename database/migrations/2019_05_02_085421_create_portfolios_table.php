@@ -18,9 +18,9 @@ class CreatePortfoliosTable extends Migration
             $table->string('title_hy')->nullable();
             $table->string('title_en')->nullable();
             $table->string('title_ru')->nullable();
-            $table->string('text_hy')->nullable();
-            $table->string('text_en')->nullable();
-            $table->string('text_ru')->nullable();
+            $table->longText('text_hy')->nullable();
+            $table->longText('text_en')->nullable();
+            $table->longText('text_ru')->nullable();
             $table->string('color')->nullable();
             $table->string('photo')->nullable();
             $table->timestamps();

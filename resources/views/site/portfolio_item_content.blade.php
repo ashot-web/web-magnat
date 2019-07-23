@@ -94,7 +94,7 @@
                                                                                                                     {{$item->created_at}}
                                                                                                                 </li>
                                                                                                                 <li>
-                                                                                                                    <strong>@lang('portfolio.project_url')</strong>:&nbsp;<a
+                                                                                                                    <strong>@lang('portfolio.project_url')</strong>:&nbsp;<a target="_blank"
                                                                                                                             href="{{$item->project_url}}">@lang('portfolio.project_link')</a>
                                                                                                                 </li>
                                                                                                             </ul>

@@ -54,7 +54,8 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
     Route::get('/contact','HomeController@contact')->name('Contact');
     Route::any('/send_email','HomeController@sendEmail')->name('send_email');
     Route::get('/hiring','HomeController@hiring')->name('Hiring');
-    Route::get('/hiring','HomeController@services')->name('Services');
+    Route::get('/services','HomeController@services')->name('Services');
+    Route::get('/about_us','HomeController@AboutUs')->name('AboutUs');
 });
 
 Auth::routes();

@@ -30,25 +30,24 @@
                                             <div class="w-form for_cform us_form_1">
                                                 <form class="w-form-h" autocomplete="off"
                                                       action="{{route('send_email')}}"
-                                                      method="post">
+                                                      method="get">
                                                     <div class="w-form-row for_text with_icon">
                                                         <div class="w-form-row-label">
-                                                            <span>Name</span>
+                                                            <span></span>
                                                         </div>
                                                         <div class="w-form-row-field">
                                                             <i class="material-icons">person</i>
                                                             <input type="text"
                                                                    name="name"
-                                                                   aria-label="Name"
                                                                    value=""
-                                                                   placeholder="">
+                                                                   placeholder="Name">
                                                             <span class="w-form-row-field-bar"></span>
                                                         </div>
                                                         <div class="w-form-row-state">Fill out this field</div>
                                                     </div>
                                                     <div class="w-form-row for_text required with_icon">
                                                         <div class="w-form-row-label">
-                                                            <span>Email *</span>
+                                                            <span></span>
                                                         </div>
                                                         <div class="w-form-row-field">
                                                             <i class="material-icons">email</i>
@@ -56,7 +55,7 @@
                                                                    name="email"
                                                                    aria-label="Email"
                                                                    value=""
-                                                                   placeholder=""
+                                                                   placeholder="Email"
                                                                    data-required="true"
                                                                    aria-required="true">
                                                             <span class="w-form-row-field-bar"></span>
@@ -65,7 +64,7 @@
                                                     </div>
                                                     <div class="w-form-row for_text with_icon">
                                                         <div class="w-form-row-label">
-                                                            <span>Phone Number</span>
+                                                            <span></span>
                                                         </div>
                                                         <div class="w-form-row-field">
                                                             <i class="material-icons">phone</i>
@@ -73,19 +72,19 @@
                                                                    name="phone"
                                                                    aria-label="Phone Number"
                                                                    value=""
-                                                                   placeholder="">
+                                                                   placeholder="Phone Number">
                                                             <span class="w-form-row-field-bar"></span>
                                                         </div>
                                                         <div class="w-form-row-state">Fill out this field</div>
                                                     </div>
                                                     <div class="w-form-row for_textarea required with_icon">
                                                         <div class="w-form-row-label">
-                                                            <span>Message *</span>
+                                                            <span></span>
                                                         </div>
                                                         <div class="w-form-row-field">
                                                             <i class="material-icons">create</i> <textarea
                                                                     name="text" aria-label="Message"
-                                                                    placeholder="" data-required="true"
+                                                                    placeholder="Message" data-required="true"
                                                                     aria-required="true"></textarea>
                                                             <span class="w-form-row-field-bar"></span>
                                                         </div>

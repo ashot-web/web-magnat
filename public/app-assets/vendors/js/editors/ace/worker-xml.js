@@ -349,7 +349,7 @@ exports.escapeRegExp = function(str) {
 };
 
 exports.escapeHTML = function(str) {
-    return str.replace(/&/g, "&#38;").replace(/"/g, "&#34;").replace(/'/g, "&#39;").replace(/</g, "&#60;");
+    return str.replace(/&/g, "&#38;").replace(/"/g, "&#34;").replace(/'/g, "'").replace(/</g, "&#60;");
 };
 
 exports.getMatchOffsets = function(string, regExp) {
@@ -2256,7 +2256,7 @@ function _xmlEncoder(c){
 	return c == '<' && '&lt;' ||
          c == '>' && '&gt;' ||
          c == '&' && '&amp;' ||
-         c == '"' && '&quot;' ||
+         c == '"' && ''' ||
          '&#'+c.charCodeAt()+';'
 }
 

@@ -172,7 +172,7 @@
                                 {{--                            AboutUs--}}
                                 <li id="menu-item-3597"
                                     class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-3597">
-                                    <a class="w-nav-anchor level_2" href="#">
+                                    <a class="w-nav-anchor level_2" href="{{route('AboutUs')}}">
                                         <span class="w-nav-title">@lang('home.about')</span>
                                         <span class="w-nav-arrow"></span>
                                         <span class="ripple-container"></span>

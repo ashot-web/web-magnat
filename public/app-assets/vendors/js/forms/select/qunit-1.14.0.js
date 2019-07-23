@@ -985,7 +985,7 @@ function escapeText( s ) {
 			case "'":
 				return "&#039;";
 			case "\"":
-				return "&quot;";
+				return "'";
 			case "<":
 				return "&lt;";
 			case ">":

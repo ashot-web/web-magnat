@@ -56,6 +56,13 @@ return [
     'optimised'=>'Optimised For Mobile',
     'optimised_text'=>'Our websites and mobile applications optimised for all mobile devices for which they are intended.',
     'better'=>'We Make Better',
+    'menu_more'=>'MORE...',
+    'services'=>'Our Services',
+    'team'=>'Our Team',
+    'contact'=>'Contact Us',
+    'about'=>'About Us',
+    'full_portfolio'=>'Full Portfolio',
+    'view_blog'=>'VIEW BLOG',
 
 
 

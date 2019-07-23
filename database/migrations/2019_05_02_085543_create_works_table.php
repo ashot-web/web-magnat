@@ -21,9 +21,9 @@ class CreateWorksTable extends Migration
             $table->string('type_hy')->nullable();
             $table->string('type_en')->nullable();
             $table->string('type_ru')->nullable();
-            $table->string('about_hy')->nullable();
-            $table->string('about_en')->nullable();
-            $table->string('about_ru')->nullable();
+            $table->longText('about_hy')->nullable();
+            $table->longText('about_en')->nullable();
+            $table->longText('about_ru')->nullable();
             $table->string('photo')->nullable();
             $table->timestamps();
         });

@@ -43,7 +43,7 @@ if (!require('../core/env').canvasSupported) {
     };
 
     var encodeHtmlAttribute = function (s) {
-        return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+        return String(s).replace(/&/g, '&amp;').replace(/"/g, ''');
     };
 
     var rgb2Str = function (r, g, b) {

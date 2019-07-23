@@ -2,6 +2,15 @@
 @include('layouts.header')
 @include('layouts.footer')
 @section('content')
+    <style>
+        .page-item.active .page-link{
+            background-color: #7049ba!important;
+            border-color: #7049ba!important;
+        }
+        .page-link {
+            color: #7049ba;
+        }
+    </style>
     <div class="l-canvas sidebar_none type_wide">
         {{--    header--}}
         @yield('header')
@@ -17,7 +26,7 @@
                                         <div class="column-inner">
                                             <div class="wrapper"><h1 class="w-page-title align_center"
                                                                          itemprop="headline"
-                                                                         style="font-family:&#39;Roboto&#39;, sans-serif;color: white;opacity: 0.7">
+                                                                         style="font-family:'Roboto', sans-serif;color: white;opacity: 0.7">
                                                     @lang('blog.blog')</h1>
                                             </div>
                                         </div>
@@ -130,7 +139,7 @@
                                                                      style="position: relative; height: auto;">
                                                                     @foreach($blogs as $blog)
                                                                     <article
-                                                                            class="w-grid-item ratio_1x1 post-{{$blog->id}} post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress tag-branding tag-business tag-design tag-image tag-wordpress-2"
+                                                                            class="float-left w-grid-item ratio_1x1 post-{{$blog->id}} post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress tag-branding tag-business tag-design tag-image tag-wordpress-2"
                                                                             data-id="{{$blog->id}}">
                                                                         <div class="w-grid-item-h">
                                                                             <h2 class="w-post-elm post_title usg_post_title_1 entry-title color_link_inherit">
@@ -163,7 +172,8 @@
                                                                     @endforeach
 
                                                                 </div>
-                                                                <div class="" align="left"
+
+                                                                <div class="color1" align="left"
                                                                      id="paglink">{{ $blogs->links() }}</div>
                                                                 <div class="">
                                                             </div>

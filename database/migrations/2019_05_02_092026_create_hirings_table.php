@@ -21,9 +21,9 @@ class CreateHiringsTable extends Migration
             $table->string('position_hy')->nullable();
             $table->string('position_en')->nullable();
             $table->string('position_ru')->nullable();
-            $table->string('about_hy')->nullable();
-            $table->string('about_en')->nullable();
-            $table->string('about_ru')->nullable();
+            $table->longText('about_hy')->nullable();
+            $table->longText('about_en')->nullable();
+            $table->longText('about_ru')->nullable();
             $table->string('photo')->nullable();
             $table->timestamps();
         });

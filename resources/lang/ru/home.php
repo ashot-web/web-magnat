@@ -12,7 +12,7 @@ return [
 |
 */
 
-    'quality' => 'hy',
+    'quality' => 'ru',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'home'=>'ГЛАВНАЯ',
     'pages'=>'СТРАНИЦЫ',
@@ -56,7 +56,13 @@ return [
     'flexible'=>"Полнофункциональный и гибкий",
     'fully_featured_flexible_text'=>'Наши веб-сайты и мобильные приложения полностью функциональны и гибки на всех устройствах, для которых они предназначены.',
     'better'=>'Мы Делаем Лучшее',
-
+    'menu_more'=>'БОЛЬШЕ...',
+    'services'=>'Наши Сервисы',
+    'team'=>'Наши Работники',
+    'contact'=>'Связатся С Нами',
+    'about'=>'О Нас',
+    'full_portfolio'=>'Все Работы',
+    'view_blog'=>'ПРОСМОТРЕТЬ БЛОГ',
 
 
 

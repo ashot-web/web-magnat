@@ -21,7 +21,7 @@
                                         <div class="wrapper">
                                             <div class="text_column ">
                                                 <div class="wrapper">
-                                                    <h1 style="text-align: center"><strong>PORTFOLIO</strong></h1>
+                                                    <h1 style="text-align: center"><strong>@lang('portfolio.portfolio')</strong></h1>
                                                 </div>
                                             </div>
                                             <div class="w-separator size_medium"></div>
@@ -186,7 +186,7 @@
                                                                     <h2 class="w-post-elm post_title usg_post_title_1 with_text_color entry-title">
                                                                         {{$portfolio->textTrans('title')}}</h2>
                                                                     <div class="w-post-elm post_taxonomy usg_post_taxonomy_1 style_simple color_link_inherit">
-                                                                        <a href="http://zephyr.us-themes.com/portfolio_category/photography/">{{$portfolio->textTrans('text')}}</a>
+                                                                        <a href="http://zephyr.us-themes.com/portfolio_category/photography/">{!! $portfolio->textTrans('text')!!}</a>
                                                                     </div>
                                                                 </div>
                                                             </div>

@@ -10,7 +10,7 @@
                     <div class="col-sm-12 column column_container">
                         <div class="column-inner">
                             <div class="wrapper"><h1 class="w-page-title align_center" itemprop="headline"
-                                                     style="font-family:'Roboto', sans-serif;color: white;opacity: 0.9">@lang('team.meet_our_team')</h1>
+                                                     style="font-family:'Roboto', sans-serif;color: white;">@lang('team.meet_our_team')</h1>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                                                         <span>@lang('team.our_team')</span>
                                                     </h6></div>
                                             </div>
-                                            <div class="g-cols row  type_default valign_top inner ">
+                                            <div class="align-items-center d-flex justify-content-center g-cols row  type_default valign_top inner">
                                                 @foreach($teams as $team)
                                                     <div class="col-sm-4 column column_container animate_afl animate_start">
                                                         <div class="column-inner">
@@ -84,9 +84,10 @@
                                         <div class="wrapper">
                                             <div class="text_column ">
                                                 <div class="wrapper">
-                                                    <h2 style="text-align: center;">Our Office</h2>
+                                                    <h2 style="text-align: center;">@lang('team.our_office')</h2>
                                                 </div>
                                             </div>
+                                            <div class="w-separator size_medium"></div>
                                             <div class="w-grid type_grid layout_gallery_default cols_5 no_gap"
                                                  id="us_grid_1">
                                                 <style id="us_grid_1_css">@media (max-width: 767px) {
@@ -115,7 +116,7 @@
                                                         transform: scale(1) translate(0, 0);
                                                         opacity: 0.5
                                                     }</style>
-                                                <div class="w-grid-list">
+                                                <div class="w-grid-list d-flex align-content-center justify-content-center">
                                                     @foreach($images as $image)
                                                     <article
                                                             class="w-grid-item ratio_1x1 post-{{$image->id}} attachment type-attachment status-inherit hentry"
@@ -123,7 +124,7 @@
                                                         <div class="w-grid-item-h">
                                                             <a class="w-grid-item-anchor"
                                                                href="{{asset("uploads/office/$image->photo")}}"
-                                                               ref="magnificPopupGrid" title="Office"><span
+                                                               ref="magnificPopupGrid" title="{{$image->textTrans('name')}}"><span
                                                                         class="ripple-container"></span></a>
                                                             <div class="w-post-elm post_image usg_post_image_1 stretched">
                                                                 <img
@@ -142,7 +143,7 @@
                                             <div class="w-btn-wrapper width_auto align_center"><a
                                                         class="w-btn us-btn-style_4 icon_atleft"
                                                         href="{{route('Contact')}}"><i
-                                                            class="material-icons">place</i><span class="w-btn-label">@lang('home.our_location')</span><span
+                                                            class="material-icons">place</i><span class="w-btn-label">@lang('team.our_location')</span><span
                                                             class="ripple-container"></span></a></div>
                                         </div>
                                     </div>

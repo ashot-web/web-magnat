@@ -7062,8 +7062,8 @@ define("tinymce/html/Entities", [
 
 	// Raw entities
 	baseEntities = {
-		'\"': '&quot;', // Needs to be escaped since the YUI compressor would otherwise break the code
-		"'": '&#39;',
+		'\"': ''', // Needs to be escaped since the YUI compressor would otherwise break the code
+		"'": ''',
 		'<': '&lt;',
 		'>': '&gt;',
 		'&': '&amp;',
@@ -7075,7 +7075,7 @@ define("tinymce/html/Entities", [
 		'&lt;': '<',
 		'&gt;': '>',
 		'&amp;': '&',
-		'&quot;': '"',
+		''': '"',
 		'&apos;': "'"
 	};
 

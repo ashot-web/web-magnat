@@ -17,9 +17,9 @@ class CreateAboutTeamsTable extends Migration
 
                 $table->bigIncrements('id');
                 $table->string('worker_id')->nullable();
-                $table->string('about_hy')->nullable();
-                $table->string('about_en')->nullable();
-                $table->string('about_ru')->nullable();
+                $table->longText('about_hy')->nullable();
+                $table->longText('about_en')->nullable();
+                $table->longText('about_ru')->nullable();
                 $table->timestamps();
             });
 

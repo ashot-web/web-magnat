@@ -15,7 +15,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $portfolios = Portfolio::Paginate(20);
+        $portfolios = Portfolio::Paginate(10);
         return view('admin.view.portfolio.portfolio_list', compact('portfolios'));
     }
 
@@ -51,7 +51,7 @@ class PortfolioController extends Controller
         $portfolio->fill($request->toArray());
         $portfolio->photo = $fileName;
         $portfolio->save();
-        $portfolios = Portfolio::Paginate(20);
+        $portfolios = Portfolio::Paginate(10);
         return view('admin.view.portfolio.portfolio_list', compact('portfolios'));
     }
 
@@ -102,7 +102,7 @@ class PortfolioController extends Controller
         }
         $portfolio->fill($request->toArray());
         $portfolio->save();
-        $portfolios = Portfolio::Paginate(20);
+        $portfolios = Portfolio::Paginate(10);
 
         return view('admin.view.portfolio.portfolio_list', compact('portfolios'));
     }
@@ -117,7 +117,7 @@ class PortfolioController extends Controller
     {
         //
         $portfolio->delete();
-        $portfolios = Portfolio::Paginate(20);
+        $portfolios = Portfolio::Paginate(10);
 
         return view('admin.view.portfolio.portfolio_list', compact('portfolios'));
     }

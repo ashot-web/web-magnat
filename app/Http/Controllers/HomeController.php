@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\AboutOffice;
 use App\Blog;
 use App\Contact;
 use App\Office;
@@ -17,10 +18,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
 
     /**
      * Show the application dashboard.
@@ -88,12 +86,15 @@ class HomeController extends Controller
         $address=$contacts->textTrans('address');
         return view('site.contact_content',compact('tel','address'));
     }
-    public function sendEmail()
+    public function sendEmail(Request $request)
     {
-        Mail::send(['text'=>'mail.mail'],['name','user'],function ($message){
-            $message->to('ashot.sargsyan94@yahoo.com','to WM')->subject('test email');
-            $message->from('asha062594@gmail.com','from ASH');
+        $data=$request->toArray();
+        Mail::send(['html'=>'mail.mail'],$data,function ($message){
+            $message->to('ash062594@mail.ru','to WM')->subject('Contact Us');
+            $message->from(env('MAIL_USERNAME'));
         });
+        return redirect()->back();
+
     }
     public function hiring()
     {
@@ -108,5 +109,14 @@ class HomeController extends Controller
         $tel=$contacts->tel;
         $address=$contacts->textTrans('address');
         return view('site.our_services_content',compact('tel','address'));
+    }
+    public function AboutUs()
+    {
+        $contacts=Contact::first();
+        $tel=$contacts->tel;
+        $address=$contacts->textTrans('address');
+        $about=AboutOffice::orderBy('id','desc')->first();
+        $teams=Team::all();
+        return view('site.about_us_content',compact('tel','address','about','teams'));
     }
 }
